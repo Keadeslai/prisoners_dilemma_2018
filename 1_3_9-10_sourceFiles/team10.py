@@ -18,7 +18,8 @@ def move(my_history, their_history, my_score, their_score):
     else:
         if their_history[-1]=='c':
             return 'c'
-
+        if len (my_history)<=100:
+            return 'b' 
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
